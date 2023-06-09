@@ -1,0 +1,52 @@
+.center-page {
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+
+}
+
+.center-page::before {
+    content: "";
+    background: url("./images/hills-2836301_1280.jpg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+    background-attachment: scroll;
+}
+
+h1,
+h3,
+form {
+    position: relative;
+    color: #000000;
+    line-height: 0.9;
+    text-align: center;
+}
+
+.card {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    height: 300px;
+    width: 350px;
+
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
