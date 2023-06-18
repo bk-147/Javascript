@@ -57,7 +57,7 @@ router.put('/:id', async (req, res) => {
     const result = await client.db("myNewDatabase").collection("movies").updateMany({ id: parseInt(id) }, { $set: reqBody })
     console.log(result)
 
-    res.json({ message: `The book with id ${id} has been updated` })
+    res.json({ message: `movie with id ${id} has been updated` })
 })
 
 //delete a movie
